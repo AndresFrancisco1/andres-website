@@ -43,6 +43,7 @@ with st.container():
         )
         st.write("[Youtube Channel >](https://www.youtube.com/channel/UCvYY3knD1bfT_S7sooNRxHQ)")
         with right_column:
+
             
 # ---- PROJECTS ----
 with st.container():
@@ -61,6 +62,7 @@ with st.container():
             """
         )
         st.markdown("[Watch Video...](https://www.youtube.com/watch?v=Mo753haFhaA)")
+
 
 # ---- CONTACT ----
 with st.container():
