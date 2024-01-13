@@ -22,7 +22,6 @@ local_css("style/style.css")
 
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d2371f360/IU6MBRUGKX.json")
-img_cs16 = Image.open("images/mqdefault.webp")
 
 # ---- HEADER SECTION ----
 st.subheader("Hi, I am Andres :wave:")
@@ -57,9 +56,7 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-    image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_cs16)
+    text_column = st.columns((1))
     with text_column:
         st.subheader("Cs 1.6 knife and Cs 1.6 hands on cs 1.5 animation")
         st.write(
