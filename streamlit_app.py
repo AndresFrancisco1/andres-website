@@ -22,7 +22,7 @@ local_css("style/style.css")
 
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d2371f360/IU6MBRUGKX.json")
-img_cs16 = Image.open("images/mqdefault.webp")
+img_cs16 = image.open("Images/mqdefault.webp")
 
 # ---- HEADER SECTION ----
 st.subheader("Hi, I am Andres :wave:")
