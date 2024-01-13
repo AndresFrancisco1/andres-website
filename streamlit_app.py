@@ -58,9 +58,9 @@ with st.container():
     st.header("My Projects")
     st.write("##")
   image_column, text_column = st.columns((1, 2))
-    with image_column:
+with image_column:
         st.image(img_cs16)
-    with text_column:
+with text_column:
         st.subheader("Cs 1.6 knife and Cs 1.6 hands on cs 1.5 animation")
         st.write(
             """
