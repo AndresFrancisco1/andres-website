@@ -57,7 +57,7 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-   image_column, text_column = st.column(1)
+  image_column, text_column = st.columns((1, 2))
     with image_column:
         st.image(img_cs16)
     with text_column:
@@ -68,7 +68,8 @@ with st.container():
             this is one of my nicest projects i created in the free time i have.
             """
         )
-
+        st.markdown("[Watch Video...](https://www.youtube.com/watch?v=Mo753haFhaA)")
+        
 # ---- CONTACT ----
 with st.container():
     st.write("---")
