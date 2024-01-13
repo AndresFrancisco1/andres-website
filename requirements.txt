@@ -1,7 +1,6 @@
-pandas
-plotly
-streamlit
-yfinance
-pandas-datareader
-prophet
 streamlit_lottie
+streamlit
+requests
+Pillow
+protobuf
+watchdog
