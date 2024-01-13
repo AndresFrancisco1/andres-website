@@ -56,6 +56,8 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
+    text_column, = st.columns(1)
+
     with text_column:
         st.subheader("Cs 1.6 knife and Cs 1.6 hands on cs 1.5 animation")
         st.write(
