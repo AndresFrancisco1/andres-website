@@ -2,17 +2,10 @@ from PIL import Image
 import requests
 import lottie as lo
 import streamlit as st
-from streamlit_lottie import st_lottie
 
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
-
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
 
 # Use local CSS
 def local_css(file_name):
@@ -22,7 +15,6 @@ def local_css(file_name):
 local_css("style/style.css")
 
 # ---- LOAD ASSETS ----
-lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d2371f360/IU6MBRUGKX.json")
 img_cs16 = Image.open("images/mqdefault.webp")
 
 # ---- HEADER SECTION ----
@@ -50,8 +42,6 @@ with st.container():
             """
         )
         st.write("[Youtube Channel >](https://www.youtube.com/channel/UCvYY3knD1bfT_S7sooNRxHQ)")
-        with right_column:
-            st_lottie(lottie_coding, height=300, key="coding")
 
 # ---- PROJECTS ----
 with st.container():
