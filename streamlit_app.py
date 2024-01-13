@@ -57,7 +57,7 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-  image_column, text_column = st.columns((1, 2))
+image_column, text_column = st.columns((1,2))
 with image_column:
         st.image(img_cs16)
 with text_column:
