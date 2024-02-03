@@ -23,12 +23,25 @@ local_css("style/style.css")
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d2371f360/IU6MBRUGKX.json")
 img_cs16 = Image.open("Images/mqdefault.webp")
+img_andres = Image.open("Images/andres.jpg")
 
 # ---- HEADER SECTION ----
 st.subheader("Hi, I am Andres :wave:")
 st.title("A Student, Gamer From Philippines")
 st.write("I am passionate about trying to figure out how to spend more time doing what makes me and my family happy.")
 st.write("[Learn More >](https://www.facebook.com/profile.php?id=100084117730201)")
+
+# ---- MY PROFILE ----
+st.subheader("Hi, I am Andres Luis Francisco but u can call me Andres or Luis :wave:")
+st.title("I am 17 years old")
+st.write("I was born in 2006 November 30th.")
+st.write("I am a grade 10 student from CCS (Canlubang Christian School).")
+st.write("I am interested in 3d modeling, becoming a youtuber, gaming, coding, building a pc.")
+st.write("My profile while it doesnt seem much. i hope you all people get to know me better with this infomation.")
+image_column, = st.columns((1))
+with image_column:
+        st.image(img_andres)
+
 
 
 # ---- WHAT I DO ----
