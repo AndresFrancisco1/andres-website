@@ -54,7 +54,6 @@ local_css("style/style.css")
 lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d2371f360/IU6MBRUGKX.json")
 img_cs16 = Image.open("Images/mqdefault.webp")
 img_andres = Image.open("Images/andres.jpg")
-img_background = Image.open("Images/background.png")
 
 # ---- HEADER SECTION ----
 st.subheader("Hi, I am Andres :wave:")
