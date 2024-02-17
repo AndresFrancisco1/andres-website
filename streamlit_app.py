@@ -28,8 +28,6 @@ def set_bg_hack_url():
          unsafe_allow_html=True
      )
 
-set_png_as_page_bg('background.png')
-
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code != 200:
