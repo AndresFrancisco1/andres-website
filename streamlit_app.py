@@ -4,26 +4,19 @@ import base64
 import streamlit as st
 from streamlit_lottie import st_lottie
 
-main_bg = "Background.png"
-main_bg_ext = "png"
-
-side_bg = "Background.png"
-side_bg_ext = "png"
-
-st.markdown(
-    f"""
+def set_background(png_file):
+    bin_str = get_base64(png_file)
+    page_bg_img = '''
     <style>
-    .reportview-container {{
-        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
-    }}
-   .sidebar .sidebar-content {{
-        background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()})
-    }}
+    .main {
+    background-image: url("data:image/png;base64,%s");
+    background-size: cover;
+    }
     </style>
-    """,
-    unsafe_allow_html=True
-)
-
+    ''' % bin_str
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    
+set_background("Images/Background.png")
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
