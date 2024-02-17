@@ -14,28 +14,16 @@ def get_base64_of_bin_file(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-def set_bg_hack(image):
-    '''
-    A function to unpack an image from root folder and set as bg.
- 
-    Returns
-    -------
-    The background.
-    '''
-    # set bg name
-    main_bg_ext = "img_background"
-        
-    st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+    }
+   </style>
+    """,
+    unsafe_allow_html=True
+)
 
 def load_lottieurl(url):
     r = requests.get(url)
