@@ -13,11 +13,6 @@ def get_base64_of_bin_file(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-
-
-[theme]
-backgroundColor = "#F0F0F0"
-
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code != 200:
