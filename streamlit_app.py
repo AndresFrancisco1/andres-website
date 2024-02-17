@@ -3,7 +3,7 @@ import requests
 import base64
 import streamlit as st
 from streamlit_lottie import st_lottie
-
+streamlit config set [theme]
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
@@ -14,6 +14,18 @@ def get_base64_of_bin_file(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
+
+
+[theme]
+backgroundColor = "#F0F0F0"
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+# Use Background Image
 st.markdown(
     """
     <style>
@@ -24,12 +36,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
 
 # Use local CSS
 def local_css(file_name):
