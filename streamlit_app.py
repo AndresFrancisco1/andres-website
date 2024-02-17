@@ -49,11 +49,9 @@ st.title("I am 17 years old")
 st.title("A Grade 10 Student, that is studying from Canlubang Christian School")
 st.title("I am currently interested in learning, Coding, Modelling, Mapping, Gaming, ICT, Building Personal Computers, And Doing Youtube Videos")
 st.title("I hope we can be friends, or best friends if u want, also below picture is myself hehe")
-image_column, = st.columns((1))
-with image_column:
-        st.image(img_andres)
-    with right_column:
+ with right_column:
             st_lottie(img_andres, height=300, key="andres)
+   
 
 # ---- MY ACTIVE PROFILE LINKS ----
 st.subheader("ACTIVE PROFILES")
