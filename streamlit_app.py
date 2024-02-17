@@ -64,6 +64,8 @@ with cent_co:
 # ---- MY ACTIVE PROFILE LINKS ----
 st.subheader("ACTIVE PROFILES")
 st.title("[Facebook Profile] (https://www.facebook.com/profile.php?id=100084117730201)")
+st.title("[Steam Profile] (https://steamcommunity.com/profiles/76561198849072479/)")
+st.title("[Youtube Profile] (https://www.youtube.com/channel/UCvYY3knD1bfT_S7sooNRxHQ)")
 
 # ---- WHAT I DO ----
 with st.container():
