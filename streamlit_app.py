@@ -41,21 +41,21 @@ local_css("style/style.css")
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d2371f360/IU6MBRUGKX.json")
 img_cs16 = Image.open("Images/mqdefault.webp")
-img_andres = Image.open("Images/andres.jpg")
+img_andres = Image.open("Images/andres1.jpg")
 
 # ---- MY PROFILE ----
 st.subheader("Hi, I am Andres Luis Francisco, but u can call me Andres or Luis :wave:")
 st.title("I am 17 years old")
 st.title("A Grade 10 Student, that is studying from Canlubang Christian School")
-st.write("I am currently interested in learning, Coding, Modelling, Mapping, Gaming, ICT, Building Personal Computers, And Doing Youtube Videos")
-st.write("I hope we can be friends, or best friends if u want :smiley:")
+st.title("I am currently interested in learning, Coding, Modelling, Mapping, Gaming, ICT, Building Personal Computers, And Doing Youtube Videos")
+st.title("I hope we can be friends, or best friends if u want, also below picture is myself hehe")
 image_column, = st.columns((1))
 with image_column:
         st.image(img_andres)
 
 # ---- MY ACTIVE PROFILE LINKS ----
 st.subheader("These are my Active profiles that u can see by clicking the links that i provided below")
-st.write("[Facebook Profile] (https://www.facebook.com/profile.php?id=100084117730201)")
+st.title("[Facebook Profile] (https://www.facebook.com/profile.php?id=100084117730201)")
 
 # ---- WHAT I DO ----
 with st.container():
