@@ -24,12 +24,6 @@ def get_base64(bin_file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-
-original_title = '<h1 style="font-family: serif; color:white; font-size: 20px;">Streamlit CSS Styling✨ </h1>'
-st.markdown(original_title, unsafe_allow_html=True)
-
-# Set Background
-
 def set_background(gif_file):
     bin_str = get_base64(gif_file)
     page_bg_img = '''
