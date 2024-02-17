@@ -52,9 +52,11 @@ st.title("I hope we can be friends, or best friends if u want, also below pictur
 image_column, = st.columns((1))
 with image_column:
         st.image(img_andres)
+    with right_column:
+            st_lottie(img_andres, height=300, key="andres)
 
 # ---- MY ACTIVE PROFILE LINKS ----
-st.subheader("These are my Active profiles that u can see by clicking the links that i provided below")
+st.subheader("ACTIVE PROFILES")
 st.title("[Facebook Profile] (https://www.facebook.com/profile.php?id=100084117730201)")
 
 # ---- WHAT I DO ----
