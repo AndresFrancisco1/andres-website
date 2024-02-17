@@ -36,7 +36,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
-set_background('images/background.png')
+set_background("'Images/Background.png")
 
 # Use Background Image
 st.markdown(
@@ -61,6 +61,7 @@ local_css("style/style.css")
 lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d2371f360/IU6MBRUGKX.json")
 img_cs16 = Image.open("Images/mqdefault.webp")
 img_andres = Image.open("Images/andres1.jpg")
+png_file = Image.open("Images/Background.png")
 
 # ---- MY PROFILE ----
 st.subheader("Hi, I am Andres Luis Francisco, but u can call me Andres or Luis :wave:")
