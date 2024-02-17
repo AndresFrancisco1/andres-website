@@ -36,19 +36,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
-set_background("'Images/Background.png")
-
-# Use Background Image
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-    }
-   </style>
-    """,
-    unsafe_allow_html=True
-)
+set_background("Images/Background.png")
 
 # Use local CSS
 def local_css(file_name):
