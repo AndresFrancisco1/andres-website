@@ -46,17 +46,7 @@ local_css("style/style.css")
 lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d2371f360/IU6MBRUGKX.json")
 img_cs16 = Image.open("Images/mqdefault.webp")
 img_andres = Image.open("Images/andres.jpg")
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-background-size: cover;
-}
-</style>
-'''
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
+png_file = Image.Open("Images/Background.png")
 
 # ---- HEADER SECTION ----
 st.subheader("Hi, I am Andres :wave:")
