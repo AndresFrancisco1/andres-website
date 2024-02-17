@@ -4,4 +4,3 @@ requests
 Pillow
 protobuf
 watchdog
-base64
