@@ -1,11 +1,34 @@
 from PIL import Image
 import requests
+import base64
 import streamlit as st
 from streamlit_lottie import st_lottie
 
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
+
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    The background.
+    '''
+        
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background: url("https://cdn.pixabay.com/photo/2020/06/19/22/33/wormhole-5319067_960_720.jpg");
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+set_png_as_page_bg('background.png')
 
 def load_lottieurl(url):
     r = requests.get(url)
@@ -24,6 +47,17 @@ local_css("style/style.css")
 lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d2371f360/IU6MBRUGKX.json")
 img_cs16 = Image.open("Images/mqdefault.webp")
 img_andres = Image.open("Images/andres.jpg")
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 # ---- HEADER SECTION ----
 st.subheader("Hi, I am Andres :wave:")
