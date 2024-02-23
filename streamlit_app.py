@@ -50,6 +50,9 @@ lottie_coding = load_lottieurl("https://lottie.host/9c93ef77-0238-419f-9df2-ba3d
 img_cs16 = Image.open("Images/mqdefault.webp")
 img_andres = Image.open("Images/andres1.jpg")
 gif_file = Image.open("Images/Test.gif")
+img_m16 = Image.open("Images/m16.webp")
+img_mp5 = Image.open("Images/mp5.webp")
+img_ak47 = Image.open("Images/ak47.jpg")
 
 # ---- MY PROFILE ----
 st.subheader("Hi, I am Andres Luis Francisco, but u can call me Andres or Luis :wave:")
@@ -105,6 +108,42 @@ with text_column:
             """
         )
         st.markdown("[Watch Video...](https://www.youtube.com/watch?v=Mo753haFhaA)")
+
+image_column, text_column = st.columns((1,2))
+with image_column:
+        st.image(img_ak47)
+with text_column:
+        st.subheader("MW2 AK47")
+        st.write(
+            """
+            a skin that i created during free time once again
+            """
+        )
+        st.markdown("[Watch Video...](https://www.youtube.com/watch?v=UlQwzbtPks4)")
+
+image_column, text_column = st.columns((1,2))
+with image_column:
+        st.image(img_m16)
+with text_column:
+        st.subheader("COD4 M16")
+        st.write(
+            """
+            another skin that i created during free time once again
+            """
+        )
+        st.markdown("[Watch Video...](https://www.youtube.com/watch?v=8clYpTciZDE)")
+
+image_column, text_column = st.columns((1,2))
+with image_column:
+        st.image(img_mp5)
+with text_column:
+        st.subheader("COD 4 MP5 ON LYNX'S MP5 ANIMATION")
+        st.write(
+            """
+            once again another skin that i created during free time
+            """
+        )
+        st.markdown("[Watch Video...](https://www.youtube.com/watch?v=j1Q31G5IJzg)")
         
 # ---- CONTACT ----
 with st.container():
